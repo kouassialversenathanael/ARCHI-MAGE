@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/fe3581aa6a.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Century" rel="stylesheet">
+    <link rel="stylesheet" href="style4.css">
+    <title>PORTFOLIO</title>
+</head>
+<body>
+    <header id="bloc1">
+        <div class="head-title">
+            <div class="logo">
+                <a href="index.html"><img style="width:85px; height: 85px; max-height: 90px; max-width:90px" src="images/LOGO.jpg" alt="Logo"></a>
+            </div>
+            <div class="centre-hor">
+                <h1> <a style="color:#fff; text-decoration:none; " href="index.html"> ARCHI-MAGE</a></h1>
+                <p style="margin-left:20px;margin-top:-10px;font-size:25px;letter-spacing: 22px;"> <a style="color:#fff; text-decoration:none; " href="index.html">ARCHITECTES</a></p>
+            </div>
+        </div>
+        <div class="head-menu">
+            <ul class="menu-items">
+                <li class="active"> <a style="color:#fff;text-decoration:none;" href="portfolio.html">PORTFOLIO</a></li>
+                <li id="archsous" onclick="showsousdiv()">ARCHITECTES</li>
+                <li id="agence"><a style="text-decoration: none; color:#fff;" href="Agence.html">AGENCE</a></li>
+                <li>NEWS</li>
+                <li><a style="color:#fff; text-decoration:none" href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <div id="showsous" class="sous-arch">
+            <ul class="sous-menu-items">
+                <li>DIDIER ALASSER</li>
+                <li>MAX BLETCHI</li>
+            </ul>
+        </div>
+        <div>
+            <i style="color:red" class="fab fa-bars fa-2x"></i>
+        </div>
+    </header> 
+    <div id="contenu">
+        <div class="cornaline">
+            <div class="bloc-cornaline1">
+                <img width="500" height="300" src="images/1-PORTFOLIO/1-CORNALINE/image-cornaline1.jpg" alt="">
+                <img width="500" height="300" src="images/1-PORTFOLIO/1-CORNALINE/image-cornaline2.jpg" alt="">
+            </div>
+            <div class="bloc-cornaline2">
+                 <img width="500" height="300" src="images/1-PORTFOLIO/1-CORNALINE/image-cornaline3.jpg" alt="">
+                 <img width="500" height="300" src="images/1-PORTFOLIO/1-CORNALINE/image-cornaline4.jpg" alt="">
+            </div>
+            <div class="bloc-cornaline3">
+                <img width="400" height="300" src="images/1-PORTFOLIO/1-CORNALINE/image-cornaline5.jpg" alt="">
+                <img width="500" height="300" src="images/1-PORTFOLIO/1-CORNALINE/image-cornaline6.jpg" alt="">
+                <img width="400" height="300" src="images/1-PORTFOLIO/1-CORNALINE/image-cornaline7.jpg" alt="">
+            </div> 
+            <div class="presentation-cornaline">
+                <h3><b>CORNALINE</b></h3>
+                <h3 id="info-projet"><b>INFORMATIONS PROJET</b></h3>
+            </div>  
+        </div>
+    </div>
+    <footer>
+        <footer style="width: 100%; height: 60px; background: rgba(0, 0, 0, 0.7); color: #fff; position: fixed; bottom: 0%; text-align: center;">
+            <div style="height: 30px; transform: translateY(20px);">
+                <div style="display: flex; justify-content: center; width: 50%; margin: auto;">
+                    <span style="background-color: #2c333b; height: 30px; width: 20px;"><i class="fab fa-facebook-f"></i></span>&nbsp;&nbsp;
+                    <span style="background-color: #2c333b; height: 30px; width: 20px;"><i class="fab fa-instagram"></i></span>&nbsp;&nbsp;
+                    <span style="background-color: #2c333b; height: 30px; width: 20px;"><i class="fab fa-linkedin-in"></i></span>
+                </div>
+                <p>©2021 ARCHI-MAGE,Tout Droits Réservés</p>
+            </div>
+        </footer>
+    <script src="js/jquery.min.js"></script>
+    <script type="text/javascript">
+         $(document).on('click', 'ul li',function(){
+             $(this).addClass('active').siblings().removeClass('active')
+         })
+    </script>
+     <script>
+        function showsousdiv(){
+            var divsous = document.getElementById('showsous');
+            var archsous = document.getElementById('archsous');
+            if(divsous.style.display == 'block'){
+                divsous.style.display = 'none';
+                archsous.classList.remove('active');
+            }else{
+                divsous.style.display = 'block';
+                archsous.classList.add('active');
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/fe3581aa6a.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome/css/fontawesome.css">
+    <link rel="stylesheet" href="fontawesome/css/fontawesome.min.css">
+    <title>A-M</title>
+</head>
+<body>
+    <header>
+        <!--Titre -->
+        <div class="head-title">
+            <div class="logo" >
+                <img style="width:85px;height:85px;max-width:90px;max-height:90px;"src="images/LOGO.jpg" alt="Logo">
+            </div>
+            <div style="display: flex; justify-content: center;" class="centre-hor">
+                <div>
+                    <nav id="menu-horizontal" onclick="menuclick()" class="horizon-menu">
+                        <i style="color:#fff;" class="fas fa-bars fa-2x"></i>
+                    </nav>
+                </div>
+                <div style="justify-content: center; width: 80%;">
+                <h1>ARCHI-MAGE</h1>
+                <p>ARCHITECTES</p>
+                </div>
+            </div>
+        </div>
+        <!--menu-->
+         <div id="affichemenu" class="head-menu">
+            <ul class="menu-items">
+                <li class="menu-items-li"><p class="li-p"><a style="color:#fff;text-decoration:none;" href="portfolio.html">PORTFOLIO</a></p></li>
+                <li  class="menu-items-li" id="archsous" onclick="showsousdiv()"><p class="li-p">ARCHITECTES<i class="sousmenubas">▼</i></p>
+                </li>
+                <li  class="menu-items-li"><p class="li-p"><a style="text-decoration: none; color:#fff;" href="Agence.html">AGENCE</a></p></li>
+                <li  class="menu-items-li"><p class=li-p>NEWS</p></li>
+                <li  class="menu-items-li"><p class=li-p> <a style="color:#fff;text-decoration:none" href="contact.html">CONTACT</a></p></li>
+            </ul>
+        </div>
+        <!-- Les architectes a afficher-->
+        <div id="showsous" class="sous-arch">
+            <ul class="sous-menu-items">
+                <li>DIDIER ALASSER</li><br>
+                <li>MAX BLETCHI</li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <!--  slides-->
+        <div class="slidebutton-global">
+            <span class="slidebutton" onclick="plusDivs(-1);"></span>
+            <span class="slidebutton" onclick="plusDivs(+1);"></span>
+        </div>
+        <div id="main1" class="mainbody1 mySlides">
+            
+        </div>
+        <div id="main2" class="mainbody2 mySlides">
+            
+        </div>
+        <div id="main3" class="mainbody3 mySlides">
+            
+        </div>
+        <div id="main4" class="mainbody4 mySlides">
+            
+        </div>
+        <div id="main5" class="mainbody5 mySlides">
+        </div>
+        <!--theme automatique -->
+        <div style=" text-align:justify;justify-content: center;color:#fff;width: 100%; height: 10px; position: fixed;left:45%; bottom: 23%;" id="theme1" class="titre1">
+            <h1><b>NOVA 101</b></h1>
+            <p style="font-size: 11px;">Riviera Golf Cocody,ABIDJAN</p>
+        </div>
+        <div style=" text-align:justify; justify-content: center;color:#fff;width: 100%; height: 10px; position: fixed;left:43%; bottom: 23%;" id="theme2" class="titre2">
+            <h1 style="font-size: 40px;letter-spacing: 5px;"><b>CRISTAL</b></h1>
+            <p style="font-size:11px;">Riviera M'Badon Cocody,ABIDJAN</p>
+        </div>
+        <div style=" text-align:justify;justify-content: center;color:#fff;width: 100%; height: 10px; position: fixed;left:43%; bottom: 23%;" id="theme3" class="titre3">
+            <h1 ><b>VILLA MASSY</b></h1>
+            <p  style="font-size:13px;">Riviera Golf Cocody,ABIDJAN</p>
+        </div>
+        <div style=" text-align:justify;justify-content: center;color:#fff;width: 100%; height: 10px; position: fixed;left:43%; bottom: 23%;" id="theme4" class="titre4">
+            <h1 style="font-size: 30px;"><b>LES ORCHIDEES</b></h1>
+            <p style="font-size:15px;">Riviera GOLF Cocody,ABIDJAN</p>
+        </div>
+        <div style="text-align:justify;justify-content: center;color:#fff;width: 100%; height: 10px; position: fixed;left:45%; bottom: 23%;" id="theme5" class="titre5">
+            <h1  style="font-size: 40px;letter-spacing: 5px;"><b>ONE</b></h1>
+            <p  style="font-size:12px;">Zone 4 Marcory,ABIDJAN</p>
+        </div>
+        <!-- Fin themes auto-->
+        <!--Debut -->
+        <div class="point-global">
+            <div id="point1" class="point"></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div id="point2" class="point"></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div id="point3" class="point"></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div id="point4" class="point"></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div id="point5" class="point"></div>
+        </div>
+    </main>
+    <!--Fontawesome Icons sur ta page html5-->
+    <footer class="footer">
+            <div class="icon-div-global">
+                <div class="icon-global">
+                    <span class="icon"><i class="fab fa-facebook-f"></i></span>&nbsp;&nbsp;
+                    <span class="icon"><i class="fab fa-instagram"></i></span>&nbsp;&nbsp;
+                    <span class="icon"><i class="fab fa-linkedin-in"></i></span><br><br><br>
+                </div>
+                <p class=para1>©2021 ARCHI-MAGE,Tout Droits Réservés</p>
+                <p class="para2">©2021 ARCHI-MAGE,Tout Droits Réservés</p>
+            </div>
+    </footer>
+    <script>
+        //script slides
+        setInterval(function(){
+            checkerboule(); }, 100);
+
+        function checkerboule(){
+            var mainun = document.getElementById('main1');
+            var maindeux = document.getElementById('main2');
+            var maintrois = document.getElementById('main3');
+            var mainquatre = document.getElementById('main4');
+            var maincinq = document.getElementById('main5');
+            var theme1 = document.getElementById('theme1');
+            var theme2 = document.getElementById('theme2');
+            var theme3 = document.getElementById('theme3');
+            var theme4 = document.getElementById('theme4');
+            var theme5 = document.getElementById('theme5');
+
+
+            if(mainun.style.display == "block"){
+                document.getElementById('point1').classList.add('pointhover');
+                document.getElementById('theme1').classList.remove('titre1');
+            }else{
+                document.getElementById('point1').classList.remove('pointhover');
+                document.getElementById('theme1').classList.add('titre1');
+            }
+            if(maindeux.style.display == "block"){
+                document.getElementById('point2').classList.add('pointhover');
+                document.getElementById('theme2').classList.remove('titre2');
+            }else{
+                document.getElementById('point2').classList.remove('pointhover');
+                document.getElementById('theme2').classList.add('titre2');
+
+            }
+            if(maintrois.style.display == "block"){
+                document.getElementById('point3').classList.add('pointhover');
+                document.getElementById('theme3').classList.remove('titre3');
+            }else{
+                document.getElementById('point3').classList.remove('pointhover');
+                document.getElementById('theme3').classList.add('titre3');
+
+            }
+            if(mainquatre.style.display == "block"){
+                document.getElementById('point4').classList.add('pointhover');
+                document.getElementById('theme4').classList.remove('titre4');
+            }else{
+                document.getElementById('point4').classList.remove('pointhover');
+                document.getElementById('theme4').classList.add('titre4');
+            }
+            if(maincinq.style.display == "block"){
+                document.getElementById('point5').classList.add('pointhover');
+                document.getElementById('theme5').classList.remove('titre5');
+            }else{
+                document.getElementById('point5').classList.remove('pointhover');
+                document.getElementById('theme5').classList.add('titre5');
+            } 
+        }
+    </script>
+    <script>
+       var slideIndex = 1;
+        showDivs(slideIndex);
+        setInterval(function(){
+            plusDivs(+1); }, 5000);
+
+        function plusDivs(n){
+            showDivs(slideIndex += n);
+        }
+        function showDivs(n){
+            var i;
+            var x= document.getElementsByClassName("mySlides");
+            if(n > x.length) {
+                 slideIndex= 1;
+            }
+            if(n < 1) {
+                slideIndex = x.length;
+            }
+            for (i = 0 ; i < x.length; i++){
+                x[i].style.display = "none";
+            }
+            x[slideIndex-1].style.display ="block";
+        }
+    </script>
+     <script>
+         //script architectes
+        function showsousdiv(){
+            var divsous = document.getElementById('showsous');
+            var archsous = document.getElementById('archsous');
+            if(divsous.style.display == 'block'){
+                divsous.style.display = 'none';
+                archsous.classList.remove('active');
+            }else{
+                divsous.style.display = 'block';
+                archsous.classList.add('active');
+            }
+        }
+    </script>
+            <!--Script pour afficher les architectes-->
+            <script>
+                function showsousdiv(){
+                    var divsous = document.getElementById('showsous');
+                    var archsous = document.getElementById('archsous');
+    
+                    if(divsous.style.display == 'block'){
+                        divsous.style.display = 'none';
+                        archsous.classList.remove('active');
+                    }else{
+                        divsous.style.display = 'block';
+                        archsous.classList.add('active');
+                    }
+                }
+                function menuclick(){
+                var soulignement = document.getElementById('border-top');
+                var affichemenu = document.getElementById('affichemenu');
+                if(affichemenu.style.display == 'block'){
+                    affichemenu.style.display = 'none';
+                }else{
+                    affichemenu.style.display = 'block';
+                }
+            }
+            </script>
+</body>
+</html>
